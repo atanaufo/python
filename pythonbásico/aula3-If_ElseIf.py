@@ -9,5 +9,3 @@ elif opcao == '3':
     print('Maria')
 else:
     print('Opção invalida!')
-
-print('Teste')
