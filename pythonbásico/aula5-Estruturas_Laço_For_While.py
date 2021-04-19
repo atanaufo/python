@@ -41,28 +41,29 @@ for letra in palavra:
     print(letra)
 print('-----------------------')
 
-
-
-'''
+# Estrutura de laço While (enquanto) para tomada de decisão.
 
 i = 0
 while i < 10:
     print('i ainda é menor que 10: ', i)
     i = i + 1 # ou usar i += 1
+print('Acabou o while: ', i)
+print('--FIM WHILE ---------------------------------')
 
-print('------------------------------------------------------')
-
-
+# Contar lista de frutas com o FOR ou LEN
 lista_frutas = ['maca','pera','uva','abacaxi','goiaba']
 contador = 0
+
 for fruta in lista_frutas:
     contador += 1
 print(contador)
-# ou
+print('--FIM CONTADOR LISTA DE FRUTAS COM FOR ----------------')
+
 print(len(lista_frutas))
+print('--FIM CONTADOR LISTA DE FRUTAS COM LEN ------------------')
 
-print('------------------------------------------------------')
 
+# Usando o BREAK para parar
 numero = 0
 
 while True:
@@ -70,9 +71,7 @@ while True:
     if numero == 20:
         break
     numero += 1
+print('-- SAIU COM WHILE com Break --------------------------')
 
-print('------------------------------------------------------')
-
-'''
 
 
