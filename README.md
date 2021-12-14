@@ -9,7 +9,7 @@ Ambiente:
 Python;
 PyCharm Community;
 
-Jupiter Notebook;
+
 
 
 
