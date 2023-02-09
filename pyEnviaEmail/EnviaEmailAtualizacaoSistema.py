@@ -7,7 +7,6 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
-
 # 1 - Configuração da Conta do Servidor SMTP:
 host = "smtp.gmail.com"
 port = "587"
@@ -20,12 +19,9 @@ server.starttls()
 server.login(login,senha)
 
 # 2 - Construir o email tipo MIME:
-
 numeroVersao = '4.15b299'
-emailDestino = 'atanaufo.ramalho@gmail.com; suporte2@planosmetropax.com.br'
-
 emailAssunto = '[Metropax / Cortel] Atualização de Release Sankhya - Ambiente de Teste'
-
+emailDestino = 'atanaufo.ramalho@gmail.com'
 emailCorpo = """ <p><strong><span style="font-size:18px">Olá,&nbsp;</span></strong></p>
 <p><span style="font-size:18px">Informo que o ambiente de teste foi atualizado para a seguinte vers&atilde;o / release: <b>""" + numeroVersao  + """</b> para que possam realizar valida&ccedil;&otilde;es em suas principais rotinas.</span></p>
 <p>&nbsp;</p>
@@ -66,11 +62,7 @@ email_msg.attach(MIMEText(emailCorpo,'html'))
 # 3 - Enviar o email tipo MIME no SERVIDOR:
 server.sendmail(email_msg['From'],email_msg['To'],email_msg.as_string())
 server.quit()
-
-
-
 try:
     print('Enviado com sucesso!')
-
 except:
     print('Ocorreu algum erro no envio!')
