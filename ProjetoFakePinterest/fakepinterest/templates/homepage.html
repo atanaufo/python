@@ -8,11 +8,12 @@
         {% endblock %}
     </title>
 </head>
-{% block body %}
 <body>
 
+{% block body%}
 <h1>Site criado com framework Flask no AR.</h1>
 
+{% block formulario%}
 <form method="POST">
     {{ form.csrf_token }}
 
@@ -24,11 +25,8 @@
 
     {{ form.botao_confirmacao() }}
 
-
-
 </form>
-
-
+{% endblock %}
 
 </body>
 {% endblock %}
