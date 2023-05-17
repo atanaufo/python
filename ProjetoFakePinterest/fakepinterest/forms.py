@@ -20,7 +20,3 @@ class FormCriarConta(FlaskForm):
         if usuario:
             return ValidationError("E-mail já cadastrado, faça login para continuar")
 
-
-
-
-
