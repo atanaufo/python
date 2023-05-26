@@ -6,9 +6,13 @@
 
 {% block body %}
 <body>
-<h1>Página de perfil : {{ usuario }}</h1>
+<h1>Página de perfil : {{ usuario.username }}</h1>
 
 <a href="{{ url_for('logout') }}">Logout</a>
+
+{% for foto in usuario.fotos%}
+<img src="">
+{% endfor %}
 
 </body>
 {% endblock %}
