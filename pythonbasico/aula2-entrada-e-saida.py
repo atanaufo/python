@@ -2,7 +2,6 @@
 # print('Salto de linha \n olha o salto ai')
 # print('tabulação em \t execução')
 
-# nome = 'Atanaufo'
 nome = input('Escreve seu nome:')  # Para receber informação do usuário
 idade = 40
 altura = 1.72
