@@ -14,7 +14,7 @@ contador = lista_nomes.count('Maria')
 
 # Retornar o último nome, porém, irá remover da lista.
 #lista_nomes2 = ['Joao','Maria','Guilherme','Diego','Joao','Paulo']
-#print(lista_nomes2.pop())
+#print(lista_nomes2.pop()) # Função de Pilha - Retornar sempre o último da lista.
 #print(lista_nomes2)
 
 

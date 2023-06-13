@@ -7,15 +7,18 @@ IF E ELSE
 # Comparações: == != > < >= <=
 # Comparações: and or
 
-var_verdade = True # Boolean ou boleano
+#Boolean
+var_verdade = True
 var_falso = False
 
 #print(type(var_verdade),type(var_falso))
 #print(var_falso)
 
 
-if var_verdade == True:
+if var_verdade == False:
     print('Verdadeiro')
+else:
+    print('Falso!!!')
 
 '''
 a = 2
