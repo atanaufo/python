@@ -1,3 +1,7 @@
+# pip install gtts
+# pip install playsound
+
+
 import gtts
 from playsound import playsound
 
