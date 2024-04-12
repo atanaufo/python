@@ -19,12 +19,12 @@ def validar_cep(cep):
 df['CEP_valido'] = df['CEP'].apply(validar_cep)
 
 # Apresentar o DataFrame resultante
-#print(df)
+print(df)
 
 # Crie um DataFrame com os resultados
 #df = pd.DataFrame()
 
 # Salve o DataFrame em um arquivo XLSX
-df.to_excel('C:\\arquivo\\resultados_ceps.xlsx', index=False)
+#df.to_excel('C:\\arquivo\\resultados_ceps.xlsx', index=False)
 
 print("ok")
